@@ -1,0 +1,172 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: blueviolet;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#logo img{
+    margin: 10px 12px;
+    width: 148px;
+    
+}
+#navbar ul{
+    display: flex;
+    text-decoration: none;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    text-decoration: underline;
+    color: rgb(25 95 188);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 588px;
+    
+    justify-content: center;
+    align-items: center;
+  
+}
+#home::before{
+    content: "";
+    background-image:url('../foodr.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#home h1{
+    color: rgb(73 63 84);
+    text-align: center;
+    text-shadow: 3px 2px 7px red;
+}
+#home p{
+    color: #c0c7c0;
+    text-shadow:3px 2px 7px black ;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.primaryh{
+    text-align: center;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.button{
+    padding: 7px 20px;
+    border: 2px solid gray;
+    background-color: rgb(34 , 14 , 60);
+    border-radius: 1.5rem;
+    margin: 17px;
+    color:#fed891;
+    cursor: pointer;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(41, 8, 92);
+    padding: 25px 25px;
+    margin: -20px 7px;
+    border-radius: 18px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    height: 355px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(https://images.creativemarket.com/0.1.0/ps/3832726/1820/1275/m1/fpnw/wm1/rcejdjig02yo5uclcnbtfbvgj1isy6ocxsqjkkijxmodnydkawwlhrpoaruya0ta-.jpg?1515672301&s=751e65a5c99ebd0e9bbb4e27728fe879);
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+    opacity: 1;
+}
+.client-item{
+    padding: 34px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image:url(https://media.istockphoto.com/illustrations/contact-us-icon-special-blue-banner-background-illustration-id1137770739?k=6&m=1137770739&s=170667a&w=0&h=iowSjqz1FDO6byGJAOyrv0PzjyZzWATrmtr7lyMoUrA=);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px -15px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input ,#contact-box textarea
+{
+width: 100%;
+padding: 0.5rem;
+border-radius:9px;
+font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
